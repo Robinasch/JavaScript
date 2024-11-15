@@ -1,0 +1,55 @@
+<html>
+<head>
+   <title>JavaScript Lernzielkontrolle</title>
+   <meta charset="utf-8">
+   <style>
+      .colorRed {
+         color: red;
+      }
+   </style>
+   <script>
+      function changeColor() {
+         var titelHund = document.getElementById("hund");
+	 var titelKatze = document.getElementById("katze");
+	 var titelMaus = document.getElementById("maus");
+	 var titelElefant = document.getElementById("elefant");
+
+	 if (titelHund.className) {
+	    titelHund.classList.remove("colorRed")
+	 } else {
+	    titelHund.className = "colorRed";
+	 }
+	 if (titelKatze.className) {
+	    titelKatze.classList.remove("colorRed")
+	 } else {
+	    titelKatze.className = "colorRed";
+	 }
+	 if (titelMaus.className) {
+	    titelMaus.classList.remove("colorRed")
+	 } else {
+	    titelMaus.className = "colorRed";
+	 }
+	 if (titelElefant.className) {
+	    titelElefant.classList.remove("colorRed")
+	 } else {
+	    titelElefant.className = "colorRed";
+	 }
+      }
+   </script>
+</head>	
+<body>
+   <h1>Säugetiere</h1>
+   <h2 id="hund">Hund</h2>
+   <p>Die Hunde (Canidae) sind eine Familie innerhalb der Überfamilie der Hundeartigen (Canoidea).</p>
+   <h2 id="katze">Katze</h2>
+   <p>Die Hauskatze (Felis silvestris catus) ist eine Unterart der Wildkatze und deren Haustierform.</p>
+   <h2 id="maus">Maus</h2>
+   <p>Die Mäuse (Mus) sind eine Nagetiergattung aus der Gruppe der Altweltmäuse (Murinae).</p>
+   <h2 id="elefant">Elefant</h2>
+   <p>Die Elefanten (Elephantidae) bilden eine Familie der Rüsseltiere.</p>
+   <button id="btn">Farbe ändern</button>
+   <script>
+      document.getElementById("btn").addEventListener("click", changeColor);
+   </script>
+</body>
+</html>

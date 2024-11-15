@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hintergrund- und Textfarbe ändern</title>
+</head>
+<body>
+    <h1>Wähle eine Hintergrundfarbe:</h1>
+    
+    <label for="bgColorPicker">Hintergrundfarbe:</label>
+    <input type="color" id="bgColorPicker" value="#ffffff"><br><br>
+    
+    <label for="colorPicker">Textfarbe:</label>
+    <input type="color" id="colorPicker" value="#ff0000"><br><br>
+
+    <script>
+        const bgColorInput = document.getElementById("bgColorPicker");
+        bgColorInput.addEventListener('input', function(event) {
+            document.body.style.backgroundColor = event.target.value;
+        });
+
+        const textColorInput = document.getElementById("colorPicker");
+        textColorInput.addEventListener('input', function(event) {
+            document.body.style.color = event.target.value;
+        });
+    </script>
+</body>
+</html>
